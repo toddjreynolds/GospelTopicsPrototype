@@ -41,9 +41,9 @@
 		6C5A14CF1A9F836F0012B01E /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */; };
 		6C7ED7501AAE207E00B14661 /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */; };
 		6C7ED7531AAE2FD900B14661 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7521AAE2FD900B14661 /* www */; };
-		6C7ED7591AAF3F2700B14661 /* BOMEternalPerspective.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */; };
-		6C7ED75E1AAF808400B14661 /* NephiCinemagraph.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */; };
-		6C7ED75F1AAF808400B14661 /* The Restoration.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */; };
+		6C7ED7691AAF9DEB00B14661 /* BOMEternalPerspective.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7661AAF9DEB00B14661 /* BOMEternalPerspective.m4v */; };
+		6C7ED76A1AAF9DEB00B14661 /* NephiCinemagraph.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7671AAF9DEB00B14661 /* NephiCinemagraph.m4v */; };
+		6C7ED76B1AAF9DEB00B14661 /* The Restoration.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7681AAF9DEB00B14661 /* The Restoration.m4v */; };
 		6CA1551B1A9FCA1700BE9E82 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA155191A9FCA1700BE9E82 /* OpenSans-Regular.ttf */; };
 		6CA1551C1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1551A1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf */; };
 		6CA1551E1A9FD5C600BE9E82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1551D1A9FD5C600BE9E82 /* HomeViewController.swift */; };
@@ -103,9 +103,9 @@
 		6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
 		6C7ED7521AAE2FD900B14661 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = GospelTopicsPrototype/www; sourceTree = "<group>"; };
-		6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = BOMEternalPerspective.mp4; path = ../../../../../../../Downloads/BOMEternalPerspective.mp4; sourceTree = "<group>"; };
-		6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = NephiCinemagraph.mp4; path = ../../../../../../../Downloads/NephiCinemagraph.mp4; sourceTree = "<group>"; };
-		6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Restoration.mp4"; path = "../../../../../../../Downloads/The Restoration.mp4"; sourceTree = "<group>"; };
+		6C7ED7661AAF9DEB00B14661 /* BOMEternalPerspective.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = BOMEternalPerspective.m4v; path = ../BOMEternalPerspective.m4v; sourceTree = "<group>"; };
+		6C7ED7671AAF9DEB00B14661 /* NephiCinemagraph.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = NephiCinemagraph.m4v; path = ../NephiCinemagraph.m4v; sourceTree = "<group>"; };
+		6C7ED7681AAF9DEB00B14661 /* The Restoration.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Restoration.m4v"; path = "../The Restoration.m4v"; sourceTree = "<group>"; };
 		6CA155191A9FCA1700BE9E82 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		6CA1551A1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		6CA1551D1A9FD5C600BE9E82 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -246,9 +246,9 @@
 		6CCCA4001AA516C400E72307 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */,
-				6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */,
-				6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */,
+				6C7ED7661AAF9DEB00B14661 /* BOMEternalPerspective.m4v */,
+				6C7ED7671AAF9DEB00B14661 /* NephiCinemagraph.m4v */,
+				6C7ED7681AAF9DEB00B14661 /* The Restoration.m4v */,
 			);
 			name = Movies;
 			sourceTree = "<group>";
@@ -333,16 +333,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7ED76A1AAF9DEB00B14661 /* NephiCinemagraph.m4v in Resources */,
 				6C7ED7531AAE2FD900B14661 /* www in Resources */,
 				6C5A14BF1A9F836F0012B01E /* Info.plist in Resources */,
 				6C5A147D1A9F59460012B01E /* Main.storyboard in Resources */,
-				6C7ED7591AAF3F2700B14661 /* BOMEternalPerspective.mp4 in Resources */,
-				6C7ED75F1AAF808400B14661 /* The Restoration.mp4 in Resources */,
+				6C7ED7691AAF9DEB00B14661 /* BOMEternalPerspective.m4v in Resources */,
 				6C5A14821A9F59460012B01E /* LaunchScreen.xib in Resources */,
 				6C5A147F1A9F59460012B01E /* Images.xcassets in Resources */,
+				6C7ED76B1AAF9DEB00B14661 /* The Restoration.m4v in Resources */,
 				6CA1551B1A9FCA1700BE9E82 /* OpenSans-Regular.ttf in Resources */,
 				6CA1551C1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf in Resources */,
-				6C7ED75E1AAF808400B14661 /* NephiCinemagraph.mp4 in Resources */,
 				6C5A14C21A9F836F0012B01E /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

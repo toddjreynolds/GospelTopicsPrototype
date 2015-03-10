@@ -82,12 +82,12 @@ class BookOfMormonContentViewController: UIViewController {
             
             if segue.identifier == "playEternalPerspectiveSegue" {
         
-                let url = NSBundle.mainBundle().URLForResource("BOMEternalPerspective", withExtension: "mp4")
+                let url = NSBundle.mainBundle().URLForResource("BOMEternalPerspective", withExtension: "m4v")
                 destination.player = AVPlayer(URL: url)
             }
             
             else if segue.identifier == "playNephiCinemagraphSegue" {
-                let url = NSBundle.mainBundle().URLForResource("NephiCinemagraph", withExtension: "mp4")
+                let url = NSBundle.mainBundle().URLForResource("NephiCinemagraph", withExtension: "m4v")
                 destination.player = AVPlayer(URL: url)
             }
         }
