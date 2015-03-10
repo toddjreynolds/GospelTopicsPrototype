@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3B919F1AAA07C200B854BD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3B919E1AAA07C200B854BD /* AVKit.framework */; };
+		6C5A14781A9F59460012B01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14771A9F59460012B01E /* AppDelegate.swift */; };
+		6C5A147D1A9F59460012B01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A147B1A9F59460012B01E /* Main.storyboard */; };
+		6C5A147F1A9F59460012B01E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A147E1A9F59460012B01E /* Images.xcassets */; };
+		6C5A14821A9F59460012B01E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A14801A9F59460012B01E /* LaunchScreen.xib */; };
+		6C5A148E1A9F59460012B01E /* GospelTopicsPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A148D1A9F59460012B01E /* GospelTopicsPrototypeTests.swift */; };
+		6C5A14B61A9F836F0012B01E /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A149B1A9F836F0012B01E /* BlurView.swift */; };
+		6C5A14B71A9F836F0012B01E /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A149C1A9F836F0012B01E /* DesignableButton.swift */; };
+		6C5A14B81A9F836F0012B01E /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A149D1A9F836F0012B01E /* DesignableImageView.swift */; };
+		6C5A14B91A9F836F0012B01E /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A149E1A9F836F0012B01E /* DesignableLabel.swift */; };
+		6C5A14BA1A9F836F0012B01E /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A149F1A9F836F0012B01E /* DesignableTabBarController.swift */; };
+		6C5A14BB1A9F836F0012B01E /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A01A9F836F0012B01E /* DesignableTextField.swift */; };
+		6C5A14BC1A9F836F0012B01E /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A11A9F836F0012B01E /* DesignableTextView.swift */; };
+		6C5A14BD1A9F836F0012B01E /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A21A9F836F0012B01E /* DesignableView.swift */; };
+		6C5A14BE1A9F836F0012B01E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A31A9F836F0012B01E /* ImageLoader.swift */; };
+		6C5A14BF1A9F836F0012B01E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A14A41A9F836F0012B01E /* Info.plist */; };
+		6C5A14C01A9F836F0012B01E /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A51A9F836F0012B01E /* KeyboardLayoutConstraint.swift */; };
+		6C5A14C11A9F836F0012B01E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A61A9F836F0012B01E /* LoadingView.swift */; };
+		6C5A14C21A9F836F0012B01E /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A14A71A9F836F0012B01E /* LoadingView.xib */; };
+		6C5A14C31A9F836F0012B01E /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A81A9F836F0012B01E /* Misc.swift */; };
+		6C5A14C41A9F836F0012B01E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14A91A9F836F0012B01E /* SoundPlayer.swift */; };
+		6C5A14C51A9F836F0012B01E /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14AB1A9F836F0012B01E /* Spring.swift */; };
+		6C5A14C61A9F836F0012B01E /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14AC1A9F836F0012B01E /* SpringAnimation.swift */; };
+		6C5A14C71A9F836F0012B01E /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14AD1A9F836F0012B01E /* SpringButton.swift */; };
+		6C5A14C81A9F836F0012B01E /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14AE1A9F836F0012B01E /* SpringImageView.swift */; };
+		6C5A14C91A9F836F0012B01E /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14AF1A9F836F0012B01E /* SpringLabel.swift */; };
+		6C5A14CA1A9F836F0012B01E /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B01A9F836F0012B01E /* SpringTextField.swift */; };
+		6C5A14CB1A9F836F0012B01E /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B11A9F836F0012B01E /* SpringTextView.swift */; };
+		6C5A14CC1A9F836F0012B01E /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B21A9F836F0012B01E /* SpringView.swift */; };
+		6C5A14CD1A9F836F0012B01E /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B31A9F836F0012B01E /* TransitionManager.swift */; };
+		6C5A14CE1A9F836F0012B01E /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B41A9F836F0012B01E /* TransitionZoom.swift */; };
+		6C5A14CF1A9F836F0012B01E /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */; };
+		6C7ED7501AAE207E00B14661 /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */; };
+		6C7ED7531AAE2FD900B14661 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7521AAE2FD900B14661 /* www */; };
+		6C7ED7591AAF3F2700B14661 /* BOMEternalPerspective.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */; };
+		6C7ED75E1AAF808400B14661 /* NephiCinemagraph.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */; };
+		6C7ED75F1AAF808400B14661 /* The Restoration.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */; };
+		6CA1551B1A9FCA1700BE9E82 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA155191A9FCA1700BE9E82 /* OpenSans-Regular.ttf */; };
+		6CA1551C1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA1551A1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf */; };
+		6CA1551E1A9FD5C600BE9E82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1551D1A9FD5C600BE9E82 /* HomeViewController.swift */; };
+		6CCCA3FB1AA5117900E72307 /* GospelTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA3FA1AA5117900E72307 /* GospelTopicsViewController.swift */; };
+		6CCCA3FD1AA511E400E72307 /* BookOfMormonContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA3FC1AA511E400E72307 /* BookOfMormonContentViewController.swift */; };
+		6CCCA4021AA6169900E72307 /* RestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA4011AA6169900E72307 /* RestorationViewController.swift */; };
+		6CCCA4041AA616BC00E72307 /* TranslationBOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA4031AA616BC00E72307 /* TranslationBOMViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C5A14881A9F59460012B01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5A146A1A9F59460012B01E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C5A14711A9F59460012B01E;
+			remoteInfo = GospelTopicsPrototype;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C3B919E1AAA07C200B854BD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		6C5A14721A9F59460012B01E /* GospelTopicsPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GospelTopicsPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5A14761A9F59460012B01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5A14771A9F59460012B01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C5A147C1A9F59460012B01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C5A147E1A9F59460012B01E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C5A14811A9F59460012B01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6C5A14871A9F59460012B01E /* GospelTopicsPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GospelTopicsPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5A148C1A9F59460012B01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5A148D1A9F59460012B01E /* GospelTopicsPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GospelTopicsPrototypeTests.swift; sourceTree = "<group>"; };
+		6C5A149B1A9F836F0012B01E /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		6C5A149C1A9F836F0012B01E /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		6C5A149D1A9F836F0012B01E /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		6C5A149E1A9F836F0012B01E /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		6C5A149F1A9F836F0012B01E /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		6C5A14A01A9F836F0012B01E /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		6C5A14A11A9F836F0012B01E /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		6C5A14A21A9F836F0012B01E /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		6C5A14A31A9F836F0012B01E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		6C5A14A41A9F836F0012B01E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5A14A51A9F836F0012B01E /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		6C5A14A61A9F836F0012B01E /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6C5A14A71A9F836F0012B01E /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		6C5A14A81A9F836F0012B01E /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		6C5A14A91A9F836F0012B01E /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		6C5A14AA1A9F836F0012B01E /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		6C5A14AB1A9F836F0012B01E /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		6C5A14AC1A9F836F0012B01E /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		6C5A14AD1A9F836F0012B01E /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		6C5A14AE1A9F836F0012B01E /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		6C5A14AF1A9F836F0012B01E /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		6C5A14B01A9F836F0012B01E /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		6C5A14B11A9F836F0012B01E /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		6C5A14B21A9F836F0012B01E /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		6C5A14B31A9F836F0012B01E /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		6C5A14B41A9F836F0012B01E /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
+		6C7ED7521AAE2FD900B14661 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = GospelTopicsPrototype/www; sourceTree = "<group>"; };
+		6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = BOMEternalPerspective.mp4; path = ../../../../../../../Downloads/BOMEternalPerspective.mp4; sourceTree = "<group>"; };
+		6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = NephiCinemagraph.mp4; path = ../../../../../../../Downloads/NephiCinemagraph.mp4; sourceTree = "<group>"; };
+		6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Restoration.mp4"; path = "../../../../../../../Downloads/The Restoration.mp4"; sourceTree = "<group>"; };
+		6CA155191A9FCA1700BE9E82 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		6CA1551A1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		6CA1551D1A9FD5C600BE9E82 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CCCA3FA1AA5117900E72307 /* GospelTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GospelTopicsViewController.swift; sourceTree = "<group>"; };
+		6CCCA3FC1AA511E400E72307 /* BookOfMormonContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookOfMormonContentViewController.swift; sourceTree = "<group>"; };
+		6CCCA4011AA6169900E72307 /* RestorationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorationViewController.swift; sourceTree = "<group>"; };
+		6CCCA4031AA616BC00E72307 /* TranslationBOMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationBOMViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C5A146F1A9F59460012B01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3B919F1AAA07C200B854BD /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C5A14841A9F59460012B01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C5A14691A9F59460012B01E = {
+			isa = PBXGroup;
+			children = (
+				6C7ED7521AAE2FD900B14661 /* www */,
+				6C3B919E1AAA07C200B854BD /* AVKit.framework */,
+				6C5A14741A9F59460012B01E /* GospelTopicsPrototype */,
+				6C5A148A1A9F59460012B01E /* GospelTopicsPrototypeTests */,
+				6C5A14731A9F59460012B01E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C5A14731A9F59460012B01E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A14721A9F59460012B01E /* GospelTopicsPrototype.app */,
+				6C5A14871A9F59460012B01E /* GospelTopicsPrototypeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C5A14741A9F59460012B01E /* GospelTopicsPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A149A1A9F836F0012B01E /* Spring */,
+				6C5A14771A9F59460012B01E /* AppDelegate.swift */,
+				6CA1551D1A9FD5C600BE9E82 /* HomeViewController.swift */,
+				6CCCA3FA1AA5117900E72307 /* GospelTopicsViewController.swift */,
+				6CCCA4011AA6169900E72307 /* RestorationViewController.swift */,
+				6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */,
+				6CCCA4031AA616BC00E72307 /* TranslationBOMViewController.swift */,
+				6CCCA3FC1AA511E400E72307 /* BookOfMormonContentViewController.swift */,
+				6C5A147B1A9F59460012B01E /* Main.storyboard */,
+				6C5A147E1A9F59460012B01E /* Images.xcassets */,
+				6C5A14801A9F59460012B01E /* LaunchScreen.xib */,
+				6C5A14751A9F59460012B01E /* Supporting Files */,
+			);
+			path = GospelTopicsPrototype;
+			sourceTree = "<group>";
+		};
+		6C5A14751A9F59460012B01E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CCCA4001AA516C400E72307 /* Movies */,
+				6C5A14991A9F828E0012B01E /* Fonts */,
+				6C5A14761A9F59460012B01E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C5A148A1A9F59460012B01E /* GospelTopicsPrototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A148D1A9F59460012B01E /* GospelTopicsPrototypeTests.swift */,
+				6C5A148B1A9F59460012B01E /* Supporting Files */,
+			);
+			path = GospelTopicsPrototypeTests;
+			sourceTree = "<group>";
+		};
+		6C5A148B1A9F59460012B01E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A148C1A9F59460012B01E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C5A14991A9F828E0012B01E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6CA155191A9FCA1700BE9E82 /* OpenSans-Regular.ttf */,
+				6CA1551A1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		6C5A149A1A9F836F0012B01E /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A149B1A9F836F0012B01E /* BlurView.swift */,
+				6C5A149C1A9F836F0012B01E /* DesignableButton.swift */,
+				6C5A149D1A9F836F0012B01E /* DesignableImageView.swift */,
+				6C5A149E1A9F836F0012B01E /* DesignableLabel.swift */,
+				6C5A149F1A9F836F0012B01E /* DesignableTabBarController.swift */,
+				6C5A14A01A9F836F0012B01E /* DesignableTextField.swift */,
+				6C5A14A11A9F836F0012B01E /* DesignableTextView.swift */,
+				6C5A14A21A9F836F0012B01E /* DesignableView.swift */,
+				6C5A14A31A9F836F0012B01E /* ImageLoader.swift */,
+				6C5A14A41A9F836F0012B01E /* Info.plist */,
+				6C5A14A51A9F836F0012B01E /* KeyboardLayoutConstraint.swift */,
+				6C5A14A61A9F836F0012B01E /* LoadingView.swift */,
+				6C5A14A71A9F836F0012B01E /* LoadingView.xib */,
+				6C5A14A81A9F836F0012B01E /* Misc.swift */,
+				6C5A14A91A9F836F0012B01E /* SoundPlayer.swift */,
+				6C5A14AA1A9F836F0012B01E /* Spring.h */,
+				6C5A14AB1A9F836F0012B01E /* Spring.swift */,
+				6C5A14AC1A9F836F0012B01E /* SpringAnimation.swift */,
+				6C5A14AD1A9F836F0012B01E /* SpringButton.swift */,
+				6C5A14AE1A9F836F0012B01E /* SpringImageView.swift */,
+				6C5A14AF1A9F836F0012B01E /* SpringLabel.swift */,
+				6C5A14B01A9F836F0012B01E /* SpringTextField.swift */,
+				6C5A14B11A9F836F0012B01E /* SpringTextView.swift */,
+				6C5A14B21A9F836F0012B01E /* SpringView.swift */,
+				6C5A14B31A9F836F0012B01E /* TransitionManager.swift */,
+				6C5A14B41A9F836F0012B01E /* TransitionZoom.swift */,
+				6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		6CCCA4001AA516C400E72307 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				6C7ED75C1AAF808400B14661 /* NephiCinemagraph.mp4 */,
+				6C7ED75D1AAF808400B14661 /* The Restoration.mp4 */,
+				6C7ED7561AAF3F2700B14661 /* BOMEternalPerspective.mp4 */,
+			);
+			name = Movies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C5A14711A9F59460012B01E /* GospelTopicsPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C5A14911A9F59460012B01E /* Build configuration list for PBXNativeTarget "GospelTopicsPrototype" */;
+			buildPhases = (
+				6C5A146E1A9F59460012B01E /* Sources */,
+				6C5A146F1A9F59460012B01E /* Frameworks */,
+				6C5A14701A9F59460012B01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GospelTopicsPrototype;
+			productName = GospelTopicsPrototype;
+			productReference = 6C5A14721A9F59460012B01E /* GospelTopicsPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C5A14861A9F59460012B01E /* GospelTopicsPrototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C5A14941A9F59460012B01E /* Build configuration list for PBXNativeTarget "GospelTopicsPrototypeTests" */;
+			buildPhases = (
+				6C5A14831A9F59460012B01E /* Sources */,
+				6C5A14841A9F59460012B01E /* Frameworks */,
+				6C5A14851A9F59460012B01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C5A14891A9F59460012B01E /* PBXTargetDependency */,
+			);
+			name = GospelTopicsPrototypeTests;
+			productName = GospelTopicsPrototypeTests;
+			productReference = 6C5A14871A9F59460012B01E /* GospelTopicsPrototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C5A146A1A9F59460012B01E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = toddjreynolds;
+				TargetAttributes = {
+					6C5A14711A9F59460012B01E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6C5A14861A9F59460012B01E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 6C5A14711A9F59460012B01E;
+					};
+				};
+			};
+			buildConfigurationList = 6C5A146D1A9F59460012B01E /* Build configuration list for PBXProject "GospelTopicsPrototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C5A14691A9F59460012B01E;
+			productRefGroup = 6C5A14731A9F59460012B01E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C5A14711A9F59460012B01E /* GospelTopicsPrototype */,
+				6C5A14861A9F59460012B01E /* GospelTopicsPrototypeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C5A14701A9F59460012B01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7ED7531AAE2FD900B14661 /* www in Resources */,
+				6C5A14BF1A9F836F0012B01E /* Info.plist in Resources */,
+				6C5A147D1A9F59460012B01E /* Main.storyboard in Resources */,
+				6C7ED7591AAF3F2700B14661 /* BOMEternalPerspective.mp4 in Resources */,
+				6C7ED75F1AAF808400B14661 /* The Restoration.mp4 in Resources */,
+				6C5A14821A9F59460012B01E /* LaunchScreen.xib in Resources */,
+				6C5A147F1A9F59460012B01E /* Images.xcassets in Resources */,
+				6CA1551B1A9FCA1700BE9E82 /* OpenSans-Regular.ttf in Resources */,
+				6CA1551C1A9FCA1700BE9E82 /* OpenSans-Semibold.ttf in Resources */,
+				6C7ED75E1AAF808400B14661 /* NephiCinemagraph.mp4 in Resources */,
+				6C5A14C21A9F836F0012B01E /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C5A14851A9F59460012B01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C5A146E1A9F59460012B01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5A14CD1A9F836F0012B01E /* TransitionManager.swift in Sources */,
+				6CCCA4021AA6169900E72307 /* RestorationViewController.swift in Sources */,
+				6C5A14C81A9F836F0012B01E /* SpringImageView.swift in Sources */,
+				6C5A14C61A9F836F0012B01E /* SpringAnimation.swift in Sources */,
+				6C5A14B81A9F836F0012B01E /* DesignableImageView.swift in Sources */,
+				6CCCA4041AA616BC00E72307 /* TranslationBOMViewController.swift in Sources */,
+				6C7ED7501AAE207E00B14661 /* ExplorerViewController.swift in Sources */,
+				6C5A14781A9F59460012B01E /* AppDelegate.swift in Sources */,
+				6C5A14CE1A9F836F0012B01E /* TransitionZoom.swift in Sources */,
+				6C5A14CC1A9F836F0012B01E /* SpringView.swift in Sources */,
+				6C5A14CF1A9F836F0012B01E /* UnwindSegue.swift in Sources */,
+				6C5A14BC1A9F836F0012B01E /* DesignableTextView.swift in Sources */,
+				6C5A14CB1A9F836F0012B01E /* SpringTextView.swift in Sources */,
+				6C5A14CA1A9F836F0012B01E /* SpringTextField.swift in Sources */,
+				6C5A14BB1A9F836F0012B01E /* DesignableTextField.swift in Sources */,
+				6C5A14C01A9F836F0012B01E /* KeyboardLayoutConstraint.swift in Sources */,
+				6CA1551E1A9FD5C600BE9E82 /* HomeViewController.swift in Sources */,
+				6C5A14BE1A9F836F0012B01E /* ImageLoader.swift in Sources */,
+				6C5A14B61A9F836F0012B01E /* BlurView.swift in Sources */,
+				6C5A14B91A9F836F0012B01E /* DesignableLabel.swift in Sources */,
+				6C5A14B71A9F836F0012B01E /* DesignableButton.swift in Sources */,
+				6C5A14C51A9F836F0012B01E /* Spring.swift in Sources */,
+				6C5A14C41A9F836F0012B01E /* SoundPlayer.swift in Sources */,
+				6CCCA3FD1AA511E400E72307 /* BookOfMormonContentViewController.swift in Sources */,
+				6C5A14BD1A9F836F0012B01E /* DesignableView.swift in Sources */,
+				6C5A14C91A9F836F0012B01E /* SpringLabel.swift in Sources */,
+				6C5A14C71A9F836F0012B01E /* SpringButton.swift in Sources */,
+				6C5A14C31A9F836F0012B01E /* Misc.swift in Sources */,
+				6C5A14C11A9F836F0012B01E /* LoadingView.swift in Sources */,
+				6C5A14BA1A9F836F0012B01E /* DesignableTabBarController.swift in Sources */,
+				6CCCA3FB1AA5117900E72307 /* GospelTopicsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C5A14831A9F59460012B01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5A148E1A9F59460012B01E /* GospelTopicsPrototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C5A14891A9F59460012B01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C5A14711A9F59460012B01E /* GospelTopicsPrototype */;
+			targetProxy = 6C5A14881A9F59460012B01E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C5A147B1A9F59460012B01E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C5A147C1A9F59460012B01E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C5A14801A9F59460012B01E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C5A14811A9F59460012B01E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C5A148F1A9F59460012B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6C5A14901A9F59460012B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C5A14921A9F59460012B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GospelTopicsPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C5A14931A9F59460012B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GospelTopicsPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C5A14951A9F59460012B01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GospelTopicsPrototypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GospelTopicsPrototype.app/GospelTopicsPrototype";
+			};
+			name = Debug;
+		};
+		6C5A14961A9F59460012B01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GospelTopicsPrototypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GospelTopicsPrototype.app/GospelTopicsPrototype";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C5A146D1A9F59460012B01E /* Build configuration list for PBXProject "GospelTopicsPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C5A148F1A9F59460012B01E /* Debug */,
+				6C5A14901A9F59460012B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C5A14911A9F59460012B01E /* Build configuration list for PBXNativeTarget "GospelTopicsPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C5A14921A9F59460012B01E /* Debug */,
+				6C5A14931A9F59460012B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C5A14941A9F59460012B01E /* Build configuration list for PBXNativeTarget "GospelTopicsPrototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C5A14951A9F59460012B01E /* Debug */,
+				6C5A14961A9F59460012B01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C5A146A1A9F59460012B01E /* Project object */;
+}
