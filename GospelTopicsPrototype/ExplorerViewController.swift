@@ -11,6 +11,7 @@ import UIKit
 class ExplorerViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
+    @IBOutlet var invisibleCenterButton: DesignableButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,8 @@ class ExplorerViewController: UIViewController {
         let url = NSBundle.mainBundle().URLForResource("www/index", withExtension: "html")
         let myRequest = NSURLRequest(URL: url!)
         webView.loadRequest(myRequest)
+        
+        invisibleCenterButton.backgroundColor = UIColor.clearColor()
 
         // Do any additional setup after loading the view.
     }

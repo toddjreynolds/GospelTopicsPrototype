@@ -2,13 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "09-restoration.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "09-restoration@2x.png"
+      "filename" : "Restoration_Videos.png"
     },
     {
       "idiom" : "universal",
