@@ -115,7 +115,7 @@ te.touch = {
             te.touches.push(new paper.Point(e.pointers[i].screenX, e.pointers[i].screenY));
         }
         */
-
+        te.selectedNode = null;
         te.zooming = true;
         te.zoom( te.startPinchZoom * e.scale, e.center.x, e.center.y );
         //te.zoom( te.startPinchZoom - (1- per), e.center.x, e.center.y );
@@ -161,6 +161,7 @@ te.touch = {
              */
             te.homeBtnHit();
             hitButton = true;
+            te.selectedNode = null;
 
         }else if(e.center.x > 40 && e.center.x < 100 && e.center.y > 40 && e.center.y < 88)
         {

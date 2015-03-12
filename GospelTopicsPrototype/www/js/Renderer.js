@@ -4,7 +4,7 @@
 te.renderer = {
 
     name: "Renderer",
-    debug: false,
+    debug: true,
 
     TO_RADIANS: Math.PI / 180,
     grd: null,
@@ -55,7 +55,16 @@ te.renderer = {
         ////lines now 664 × 664
         var lineSixze = 664;
         ctx.globalAlpha = per;
-        ctx.drawImage(te.dottedLinesImg, 0, 0, lineSixze, lineSixze, (te.width / 2) - (lineSixze/2), (te.height / 2)- (lineSixze/2), lineSixze, lineSixze);// d.radius, d.radius)
+        ctx.drawImage(te.dottedLinesImg, 0, 0, lineSixze, lineSixze, (te.width / 2) - (lineSixze/2)  + te.currentPosition.x , (te.height / 2)- (lineSixze/2) + te.currentPosition.y  , lineSixze * te.currentZoom * 2.0, lineSixze * te.currentZoom * 2.0);// d.radius, d.radius)
+
+        ////end lines
+        ////text now 768 × 226
+        var th = 226;
+        var tw = 768;
+
+        var xloc = (te.width / 2) - (tw/2)  + te.currentPosition.x ;
+        var yloc = (te.height * te.currentZoom * 2.0) - (th * te.currentZoom * 2.0) + te.currentPosition.y;
+        ctx.drawImage(te.textImg, 0, 0, tw, th, xloc, yloc, tw * te.currentZoom * 2.0, th * te.currentZoom * 2.0);// d.radius, d.radius)
         ctx.globalAlpha = 1;
         ////end lines
 
@@ -108,6 +117,7 @@ te.renderer = {
 
             //
             // draw the text
+            //
 
             if (d.kidPer > 0.1) {
                 var size = ((d.depth == 0) ? 32:(16 / Math.pow(2, d.depth))) * te.currentZoom;
@@ -130,11 +140,56 @@ te.renderer = {
                 }
             }
         }
+
+        if(te.selectedNode != null)
+        {
+            ctx.save();
+            var vr = te.selectedNode.radius * 0.25;
+            var pSize = 0.65;
+            var aDistane = ( vr *pSize);
+            var tSize = Math.floor(vr * 1.00);
+// Commented out to try to remove the View Buttons
+
+            ctx.beginPath();
+            ctx.globalAlpha = 1;
+            ctx.lineWidth = 0.1 * vr;
+            ctx.setLineDash([]);
+
+            ctx.strokeStyle = "#FFFFFF";
+
+            ctx.arc(te.selectedNode.x, te.selectedNode.y, vr, 0, 2 * Math.PI, false);
+            ctx.stroke();
+            ctx.lineJoin="round";
+            ctx.lineCap="round";
+            ctx.beginPath();
+            //ctx.strokeStyle = "#FFFFFF";
+            ctx.moveTo(te.selectedNode.x - ( aDistane/2), te.selectedNode.y - ( aDistane));
+
+            ctx.lineTo(te.selectedNode.x +  ( aDistane/2), te.selectedNode.y );
+
+            ctx.lineTo(te.selectedNode.x - (aDistane/2), te.selectedNode.y + ( aDistane));
+
+
+
+
+
+            ctx.fillStyle = "#FFFFFF";//this.getTextColor(d);
+            ctx.font =tSize + "px Conv_ZoramldsLat-Bold";// "px Arial";
+            ctx.fillText("VIEW", te.selectedNode.x, te.selectedNode.y + vr + tSize + (vr * 0.25));
+            ctx.stroke();
+
+
+            //var vw = 78, vh = 100;
+            //ctx.drawImage(te.viewBtnImg, 0, 0, vw, vh, te.selectedNode.x- vw/2, te.selectedNode.y-vh/2, vw, vh);// d.radius, d.radius)
+            ctx.restore();
+        }
+
         ctx.globalAlpha = 1 -per;
         ctx.drawImage(te.homeImg, 0, 0, 94, 95, te.homeBtnX, te.homeBtnY, te.homeSize, te.homeSize);// d.radius, d.radius)
 
         //
 
+        /*
         if (this.debug) {
             //ctx.fillText(te.fpstxt, 150, 50);
             ctx.drawImage(te.homeImg, 0, 0, 94, 95, 40, 40, 94/2, 95/2);// d.radius, d.radius)
@@ -146,13 +201,10 @@ te.renderer = {
 
             //this.drawCircleXY(te.centerZoomPoint.x, te.centerZoomPoint.y, 5, "#ff0000", 1, ctx)
 
-            /*
-             for (var i = 0; i < te.touches.length; ++i) {
-             var touch = te.touches[i];
-             this.drawCircleXY(touch.x, touch.y, 45, "#0000FF", 1, ctx)
-             }
-             */
+
         }
+        */
+
     },
     compare:function (a, b) {
         if (a.cluster < b.cluster) {
@@ -226,16 +278,13 @@ getTextColor: function (node) {
         //ctx.strokeStyle = te.colorCat[d.cluster] + "CC";
         //ctx.lineWidth = 0.5;
         ctx.strokeStyle = "#8F8F8F";
-        ctx.lineWidth = te.maxRadius * 0.05;
-        ctx.setLineDash([2,5]);
 
+        ctx.setLineDash([2,5]);
+        ctx.lineWidth = te.maxRadius * 0.05;
         var radius = 75;
         var startAngle = 1.1 * Math.PI;
         var endAngle = 1.9 * Math.PI;
         var counterClockwise = false;
-
-
-
 
         ctx.moveTo(d.x, d.y);
         //ctx.arc(d.parent.x, d.parent.y, radius, startAngle, endAngle, counterClockwise);

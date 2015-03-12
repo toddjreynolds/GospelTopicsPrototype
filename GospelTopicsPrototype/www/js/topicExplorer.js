@@ -89,8 +89,13 @@ var te =
     editMode:false,
     dragged:null,
 
-    homeImg: false,
-    dottedLinesImg:false,
+    homeImg: null,
+    dottedLinesImg:null,
+    
+    // Changed from null to false to try to hide the view buttons
+    viewBtnImg:false,
+    textImg:null,
+
 
     zoomLowerLimit:0.5,
     zoomUpperLimit:50.0,
@@ -115,8 +120,8 @@ var te =
 
         te.homeImg = document.getElementById('homeImg');
         te.dottedLinesImg = document.getElementById('dottedLines');
-
-
+        te.viewBtnImg = document.getElementById('viewImg');
+        te.textImg = document.getElementById('textImg');
 
 
         this.selectedNodeLbl = document.getElementById('selectedNodeLbl');
@@ -245,8 +250,8 @@ var te =
 
     checkLimits:function()
     {
-//        te.currentPosition.x = Math.max(0, te.currentPosition.x);
-//        te.currentPosition.y = Math.max(0, te.currentPosition.y);
+        //te.currentPosition.x = Math.max(0, te.currentPosition.x);
+        //te.currentPosition.y = Math.max(0, te.currentPosition.y);
 
     },
 
@@ -430,6 +435,8 @@ var te =
             TweenLite.to(te.currentPosition, te.tweenTime + ttime, {x: xspot, y: yspot, onUpdate: te.updateModel});
             TweenLite.to(te, te.tweenTime + ttime, {currentZoom:gotoZoom, onUpdate:te.updateModel});
 
+
+            te.selectedNode = node;
         }
 
     },
