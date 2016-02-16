@@ -32,7 +32,8 @@ class RestorationViewController: UIViewController {
         if let destination = segue.destinationViewController as? AVPlayerViewController {
             
             let url = NSBundle.mainBundle().URLForResource("The Restoration", withExtension: "m4v")
-            destination.player = AVPlayer(URL: url)
+            destination.player = AVPlayer(URL: url!)
+            destination.player?.play()
         }
     }
 

@@ -39,6 +39,7 @@
 		6C5A14CD1A9F836F0012B01E /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B31A9F836F0012B01E /* TransitionManager.swift */; };
 		6C5A14CE1A9F836F0012B01E /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B41A9F836F0012B01E /* TransitionZoom.swift */; };
 		6C5A14CF1A9F836F0012B01E /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A14B51A9F836F0012B01E /* UnwindSegue.swift */; };
+		6C763B5F1C738A7900C5FAC8 /* TranslationBOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA4031AA616BC00E72307 /* TranslationBOMViewController.swift */; };
 		6C7ED7501AAE207E00B14661 /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ED74F1AAE207E00B14661 /* ExplorerViewController.swift */; };
 		6C7ED7531AAE2FD900B14661 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7521AAE2FD900B14661 /* www */; };
 		6C7ED7691AAF9DEB00B14661 /* BOMEternalPerspective.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ED7661AAF9DEB00B14661 /* BOMEternalPerspective.m4v */; };
@@ -50,7 +51,6 @@
 		6CCCA3FB1AA5117900E72307 /* GospelTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA3FA1AA5117900E72307 /* GospelTopicsViewController.swift */; };
 		6CCCA3FD1AA511E400E72307 /* BookOfMormonContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA3FC1AA511E400E72307 /* BookOfMormonContentViewController.swift */; };
 		6CCCA4021AA6169900E72307 /* RestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA4011AA6169900E72307 /* RestorationViewController.swift */; };
-		6CCCA4041AA616BC00E72307 /* TranslationBOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCA4031AA616BC00E72307 /* TranslationBOMViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +297,7 @@
 		6C5A146A1A9F59460012B01E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = toddjreynolds;
 				TargetAttributes = {
@@ -366,7 +367,6 @@
 				6C5A14C81A9F836F0012B01E /* SpringImageView.swift in Sources */,
 				6C5A14C61A9F836F0012B01E /* SpringAnimation.swift in Sources */,
 				6C5A14B81A9F836F0012B01E /* DesignableImageView.swift in Sources */,
-				6CCCA4041AA616BC00E72307 /* TranslationBOMViewController.swift in Sources */,
 				6C7ED7501AAE207E00B14661 /* ExplorerViewController.swift in Sources */,
 				6C5A14781A9F59460012B01E /* AppDelegate.swift in Sources */,
 				6C5A14CE1A9F836F0012B01E /* TransitionZoom.swift in Sources */,
@@ -387,6 +387,7 @@
 				6CCCA3FD1AA511E400E72307 /* BookOfMormonContentViewController.swift in Sources */,
 				6C5A14BD1A9F836F0012B01E /* DesignableView.swift in Sources */,
 				6C5A14C91A9F836F0012B01E /* SpringLabel.swift in Sources */,
+				6C763B5F1C738A7900C5FAC8 /* TranslationBOMViewController.swift in Sources */,
 				6C5A14C71A9F836F0012B01E /* SpringButton.swift in Sources */,
 				6C5A14C31A9F836F0012B01E /* Misc.swift in Sources */,
 				6C5A14C11A9F836F0012B01E /* LoadingView.swift in Sources */,

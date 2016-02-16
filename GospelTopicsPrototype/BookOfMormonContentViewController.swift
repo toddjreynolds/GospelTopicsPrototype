@@ -22,7 +22,7 @@ class BookOfMormonContentViewController: UIViewController {
     @IBOutlet var maskButton: UIButton!
     
     @IBAction func maskButtonPressed(sender: AnyObject) {
-        springEaseInOut(0.3, {
+        SpringAnimation.springEaseInOut(0.3, animations: {
             self.sidebarTreeView.transform = CGAffineTransformMakeTranslation(320, 0)
             self.maskButton.alpha = 0
         })
@@ -33,7 +33,7 @@ class BookOfMormonContentViewController: UIViewController {
         sidebarTreeView.hidden = false
         sidebarTreeView.transform = CGAffineTransformMakeTranslation(320, 0)
         
-        springEaseInOut(0.3, {
+        SpringAnimation.springEaseInOut(0.3, animations: {
             self.sidebarTreeView.transform = CGAffineTransformMakeTranslation(0, 0)
 //            self.toolbarView.frame = CGRectMake(0, 980, 768-320, 44)
 //            self.rcaButton.transform = CGAffineTransformMakeTranslation(-320, 0)
@@ -50,7 +50,7 @@ class BookOfMormonContentViewController: UIViewController {
         
     }
     @IBAction func closeSidebarPressed(sender: AnyObject) {
-        springEaseInOut(0.3, {
+        SpringAnimation.springEaseInOut(0.3, animations:  {
             self.sidebarTreeView.transform = CGAffineTransformMakeTranslation(320, 0)
 //            self.toolbarView.frame = CGRectMake(0, 980, 768, 44)
 //            self.rcaButton.transform = CGAffineTransformMakeTranslation(0, 0)
@@ -83,12 +83,14 @@ class BookOfMormonContentViewController: UIViewController {
             if segue.identifier == "playEternalPerspectiveSegue" {
         
                 let url = NSBundle.mainBundle().URLForResource("BOMEternalPerspective", withExtension: "m4v")
-                destination.player = AVPlayer(URL: url)
+                destination.player = AVPlayer(URL: url!)
+                destination.player?.play()
             }
             
             else if segue.identifier == "playNephiCinemagraphSegue" {
                 let url = NSBundle.mainBundle().URLForResource("NephiCinemagraph", withExtension: "m4v")
-                destination.player = AVPlayer(URL: url)
+                destination.player = AVPlayer(URL: url!)
+                destination.player?.play()
             }
         }
 

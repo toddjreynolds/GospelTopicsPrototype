@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>ACF16535-AA28-4B10-8045-DEF027C76316</string>
 	<key>IDESourceControlProjectName</key>
-	<string>GospelTopicsPrototype</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8B43DD9D5C7868A9F24687E737989F8FB825CFA0</key>
 		<string>https://github.com/toddjreynolds/GospelTopicsPrototype.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GospelTopicsPrototype.xcodeproj</string>
+	<string>GospelTopicsPrototype.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8B43DD9D5C7868A9F24687E737989F8FB825CFA0</key>

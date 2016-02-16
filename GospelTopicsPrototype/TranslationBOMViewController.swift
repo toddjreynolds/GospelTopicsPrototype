@@ -28,7 +28,7 @@ class TranslationBOMViewController: UIViewController {
     @IBAction func titleButtonIsPressed(sender: AnyObject) {
         self.mainTitleBoxView.backgroundColor = UIColor.clearColor()
         
-        springEaseInOut(0.45, {
+        SpringAnimation.springEaseInOut(0.45, animations: {
             self.navTranslation.frame = CGRectMake(0, 196, 768, 44)
             self.navBookOfMormon.transform = CGAffineTransformMakeTranslation(0, 132)
             self.navRestoration.transform = CGAffineTransformMakeTranslation(0, 88)
@@ -48,7 +48,7 @@ class TranslationBOMViewController: UIViewController {
     }
 
     @IBAction func gospelTopicsIsPressed(sender: AnyObject) {
-        springEaseInOut(0.45, {
+        SpringAnimation.springEaseInOut(0.45, animations: {
             self.navTranslation.frame = CGRectMake(0, 1024, 768, 44)
             self.navBookOfMormon.transform = CGAffineTransformMakeTranslation(0, 1024)
             self.navRestoration.transform = CGAffineTransformMakeTranslation(0, 1024)
